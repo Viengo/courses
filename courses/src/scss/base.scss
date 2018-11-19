@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,500,700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Exo+2:400,300,500,700&subset=latin,cyrillic);
+@import "mixins/breakpoints";
+@import "mixins/clearfix";
+@import "mixins/placeholder";
+@import "mixins/user-select";
+
+//libs
+@import "compass/css3";
+
+html,body,.wrap {
+  height: 100%;
+}
+.clearfix {
+  @include clearfix;
+}
+body {
+  font-family: "Exo 2";
+  font-size: 14px;
+  line-height: 1;
+  background-color: #2F3238;
+  color: #fff;
+  .wrap {
+    height: auto;
+    min-height: 100%;
+    @include clearfix;
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  @include box-sizing(border-box);
+  &:focus{
+    outline: none;
+  }
+}
+img {
+  @include user-select(none);
+}
+a{
+  color: #fff;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+  img {
+    border: none;
+  }
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
+  font-size: 100%;
+  font-weight: normal;
+  text-align: center;
+  @include user-select(none);
+}
+.h2, h2, ,.h1,h1 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  @include breakpoint(extra-small){
+    font-size: 20px;
+  }
+}
+
+h1,.h1 {
+  font-size: 44px;
+}
+
+.h3, h3 {
+  margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.h4,h4, h5, h6 {
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+p {
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+}
+ul,ol{
+  list-style-position: outside;
+  margin-bottom: 25px;
+  li {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+input[type="submit"] {
+  outline: none;
+  cursor: pointer;
+}
+.hidden {
+  display: none !important;
+}
+.hidden-middle-up {
+  @media (min-width: 992px){
+    display: none !important;
+  }
+}
+.hidden-small {
+  @media (max-width: 991px){
+    display: none !important;
+  }
+}
+.hidden-small-up {
+  @media (min-width: 768px){
+    display: none !important;
+  }
+}
+.hidden-xs {
+  @include breakpoint(extra-small){
+    display: none !important;
+  }
+}
+
