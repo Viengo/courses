@@ -7,7 +7,7 @@
   text-align: center;
   text-decoration: none;
   color: #fff;
-  @include border-radius(2px);
+  border-radius: 2px;
   @include transition-property(background);
   @include transition-duration(200ms);
   &:hover {
@@ -27,49 +27,11 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #333333;
-  @include border-radius(2px);
+  border-radius: 2px;
   @include transition-property(background,color);
   @include transition-duration(200ms);
   &:hover {
     border-color: #3b9f61;
     color: #3b9f61;
-  }
-}
-.button-submit{
-  display: block;
-  width: 121px;
-  margin-top: 20px;
-  padding: 8px 10px;
-  border: 1px solid #dddddd;
-  text-align: center;
-  text-transform: uppercase;
-  @include border-radius(2px);
-  @include filter-gradient(#ffffff, #f0f0f0, vertical); // IE6-9
-  @include background-image(linear-gradient(top, #ffffff 0%,#f0f0f0 100%));
-  &:hover, &:active {
-    -webkit-box-shadow: inset 5px 5px 11px 0px rgba(205,205,206,1);
-    -moz-box-shadow: inset 5px 5px 11px 0px rgba(205,205,206,1);
-    box-shadow: inset 5px 5px 11px 0px rgba(205,205,206,1);
-  }
-}
-.alt-button {
-  position: relative;
-  font-weight: 700;
-  text-shadow: 0px 3px 3px rgba(#000, 0.5);
-  text-decoration: none;
-  text-align: left;
-  color: #fff;
-  @include filter-gradient(#5e9800, #517a0e, vertical); // IE6-9
-  @include background-image(linear-gradient(top, #5e9800 0%,#517a0e 100%));
-  @include border-radius(2px);
-  &:hover {
-    border-bottom-color: #598a0a;
-    @include filter-gradient(#c5ff3d, #78b319, vertical); // IE6-9
-    @include background-image(linear-gradient(top, #c5ff3d 0%,#78b319 100%));
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
   }
 }

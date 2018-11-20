@@ -6,7 +6,7 @@
     padding: 15px;
     border: 2px solid #fff;
     background-color: #fff;
-    @include border-radius(15px);
+    border-radius: 15px;
     img {
       max-width: 100%;
       vertical-align: top;
@@ -18,7 +18,7 @@
     font-size: 18px;
     font-weight: 500;
     color: #ffd700;
-    @include border-radius(5px);
+    border-radius: 15px;
   }
   .selected-text {
     margin-bottom: 25px;
@@ -28,7 +28,7 @@
     font-weight: 500;
     font-style: italic;
     color: #ffd700;
-    @include border-radius(5px);
+    border-radius: 15px;
   }
   .code-wrap {
     overflow: auto;
@@ -41,7 +41,7 @@
     line-height: 1.2;
     list-style: none;
     color: #fff;
-    @include border-radius(10px);
+    border-radius: 10px;
     xmp {
       max-width: 100%;
       padding-right: 20px;
@@ -73,14 +73,14 @@
       color: #fff;
       text-align: center;
       cursor: pointer;
-      @include border-radius(5px);
+      border-radius: 5px;
     }
     .hidden-text {
       display: none;
       margin-top: 20px;
       padding: 15px;
       border: 2px solid #00C700;
-      @include border-radius(5px);
+      border-radius: 5px;
       .selected-word {
         color: #00C700;
       }

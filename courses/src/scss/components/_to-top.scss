@@ -12,11 +12,11 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  @include border-radius(50%);
-  @include opacity(0.8);
+  border-radius: 50%;
+  opacity: .8;
   @include transition-property(all);
   @include transition-duration(200ms);
   &:hover {
-    @include opacity(1);
+    opacity: 1;
   }
 }

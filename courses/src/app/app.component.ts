@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'courses';
+  private utf1 = require("../assets/images/faq/utf-1.jpg");
 }
